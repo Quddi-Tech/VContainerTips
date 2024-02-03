@@ -123,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentReference:
     TypeName: 
-  autoRun: 0
+  autoRun: 1
   autoInjectGameObjects: []
   _injectableServicesInstallers: []
   _defaultServicesInstallers:

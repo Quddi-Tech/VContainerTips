@@ -9,17 +9,17 @@ namespace Tip1.Tools
     {
         [SerializeField] private Button _interactButton;
         
-        private ILocalServiceA _localServiceA;
+        private ILocalServiceB _localServiceB;
 
         [Inject]
-        private void Construct(ILocalServiceA localServiceA)
+        private void Construct(ILocalServiceB localServiceB)
         {
-            _localServiceA = localServiceA;
+            _localServiceB = localServiceB;
         }
 
         private void OnInteractButtonClickedHandler()
         {
-            _localServiceA.Interact();
+            _localServiceB.Interact();
         }
         
         private void OnEnable()

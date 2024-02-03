@@ -213,7 +213,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Interract\nwith the local\nservice A
+  m_text: Interract\nwith the local\nservice B
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1066,12 +1066,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentReference:
-    TypeName: Scopes.GameScope
+    TypeName: Tip1.Scopes.GameScope
   autoRun: 1
   autoInjectGameObjects:
-  - {fileID: 1760794075}
   - {fileID: 39290472}
-  _injectableServicesInstallers: []
+  _injectableServicesInstallers:
+  - {fileID: 1445538414}
   _defaultServicesInstallers: []
 --- !u!4 &1760794077
 Transform:

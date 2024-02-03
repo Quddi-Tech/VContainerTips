@@ -17,7 +17,7 @@ namespace Tip4
             
             _passedFrames++;
 
-            if (_passedFrames >= 5)
+            if (_passedFrames >= FramesDelay)
             {
                 Debug.Log("Some message");
                 _passedFrames = 0;

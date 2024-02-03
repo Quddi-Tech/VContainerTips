@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using VContainer;
 
 namespace Tip4
@@ -7,6 +9,9 @@ namespace Tip4
     public class PauseService : IPauseService
     {
         private List<IPausable> _pausables;
+
+        public event Action OnPause;
+        public event Action OnUnPause;
         
         [Inject]
         private void Construct(IEnumerable<IPausable> pausables)

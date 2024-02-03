@@ -16,13 +16,6 @@ namespace Tip1.Scopes
             _injectableServicesInstallers.ForEach(objectResolver.Inject);
         }
         
-        protected override void Awake()
-        {
-            DontDestroyOnLoad(this);
-            
-            base.Awake();
-        }
-
         protected override void Configure(IContainerBuilder builder)
         {
             _injectableServicesInstallers.ForEach(service => service.Install(builder));
