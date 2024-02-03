@@ -1203,11 +1203,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentReference:
-    TypeName: Tip1.Scopes.GameScope
+    TypeName: 
   autoRun: 1
   autoInjectGameObjects:
   - {fileID: 39290472}
-  - {fileID: 1760794075}
   _injectableServicesInstallers:
   - {fileID: 1445538412}
   _defaultServicesInstallers: []
